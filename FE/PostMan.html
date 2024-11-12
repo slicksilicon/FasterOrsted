@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div  style="display:flex; flex-direction: row; height: calc(100% - 20px); width: calc(100% - 20px); background-color:lightgray; margin: 10px; border: solid 3px black;">
+    <div id='info_pane_id' style="height: 100%; width: 350px; background-color: gray; border-right: solid 3px black;">
+        <div id="select_method_id" style="display: flex; flex-direction: row;height: 15%; width: 347px; background-color: aquamarine; border-bottom: 3px black solid;justify-content: center;"></div>
+        <div id="select_command_id" style="display: flex; flex-direction: row;height: 75%; width: 347px; background-color: aquamarine; border-bottom: 3px black solid;justify-content: center;"></div>
+        <div id="btn_execute_id" style="display: flex; flex-direction: column; height: 10%; width: 347px; background-color: aquamarine;justify-content: center;padding:20px;"></div>
+    </div>    
+    <div style="display:flex; flex-direction: column; height: 100%; width: calc(100% - 350px);">
+        <div id="parameters_input_id" style="display: flex;flex-direction: column;height: calc(50% - 10px); width: (100% - 10px);background-color: lightblue;gap:5px;margin:5px;padding: 5px;"></div>
+        <div style="width:calc(100% - 10px); margin:5px; background-color: transparent;border-top: 3px solid black;"></div>
+        <p id="reply_id" style="display: flex;flex-direction: row;height: calc(50% - 10px); width: (100% - 10px); background-color: lightskyblue;margin:5px"></p> 
+    
+    </div>
+</div>
+
+<script type='module' src="/PostMan.js"></script>
+
+{% endblock %}

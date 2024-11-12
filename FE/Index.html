@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="display:flex; flex-direction: column;align-items: center;width: 100%;height: 100%;background-color: #00d4cb;">
+    <h1 id="index_title" style="background-color: transparent;height:50px;margin:10px;"></h1>    
+    <img src="/frontpage.png" style="margin: 100px ;width:calc(100% - 200px);height:calc(100% - 200px)">                
+</div>
+{% endblock %}
+
+{% block compute %}
+<script>    
+    document.getElementById('index_title').innerHTML = global_title;
+</script>
+{% endblock %}

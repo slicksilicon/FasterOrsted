@@ -1,0 +1,48 @@
+.myselect_base{
+    background-color: transparent;
+    color: black;
+}
+
+.myselect_dropdown_header{
+    flex-basis: auto 1 1;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    color: black;
+    font-size: 24px;
+    text-align: center; 
+    font-weight: bold;  
+    margin-bottom: 2px; 
+}  
+
+.myselect_radio_item{
+    height:25px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.myselect_radio_circle{    
+    background-color: #A0A0A0;    
+}
+
+.myselect_radio_circle:checked{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='0' fill='%23fff'/%3e%3c/svg%3e") !important;
+    background-color: darkblue;        
+}
+
+.myselect_radio_text{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    line-height: 20px;
+    height: 20px;
+    margin-left: 10px;   
+}
+
+.flex_horizontal_evenly{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+};
