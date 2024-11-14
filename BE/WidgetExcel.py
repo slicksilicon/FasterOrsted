@@ -1,4 +1,4 @@
-from debug import g_error, g_debug
+from debug import g_error
 
 from copy import deepcopy
 import openpyxl
@@ -55,7 +55,7 @@ class WidgetExcel:
             if cell.value is not None:
                 valid_value = True
 
-        if valid_value == False:
+        if valid_value is False:
             return None
         
         return row_data
@@ -128,13 +128,13 @@ class WidgetExcel:
                     skip = True
                     break
             
-            if skip == True:
+            if skip is True:
                 continue
             
             try:
                 value = row[header]
             except Exception as e:
-                g_error(f'Invalid header = {header}. Header not in row = {row.keys()}')
+                g_error(f'Invalid header = {header}. Header not in row = {row.keys()}. Reason {e}')
                 continue
 
             if value not in unique_values:
